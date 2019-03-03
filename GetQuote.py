@@ -13,4 +13,4 @@ def getQuote():
 
 
 
-print(getQuote())
+
