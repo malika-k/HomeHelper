@@ -1,0 +1,37 @@
+/* {
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Answer questions to hear a suggested career",
+          "examplePhrases": [
+            "good morning Alexa",
+            "Alexa open Happy Helper",
+            "Alexa tell Happy Helper restart"
+          ],
+          "keywords": [
+              "career",
+              "job",
+              "decision"
+                ],
+          "name": "Decision Tree",
+          "description": "Welcome to the Happy Helper app, an application made for busy parents. With this app, you can get a daily inspirational quote or help picking out a recipe when you're too busy to decide what's for dinner. If you don't like the suggested recipe, simply say \" next \" and happy helper will suggest a different recipe! When you find a recipe you like, you can get a list of ingredients and add it to your personal shopping list, so you can save time and stress at the store "
+
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-decision-tree-nodejs"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}*/
