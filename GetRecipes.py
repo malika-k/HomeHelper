@@ -10,4 +10,21 @@ def getRecipes():
     content = json.loads(contentString)
     content2 = content["recipes"]
     randomRecipe = random.choice(content2)
-    return randomRecipe["name"]
+    return randomRecipe
+
+dict = getRecipes()
+
+def getIngredients(object):
+    ingredientsList = []
+    url = object.get("_links", {}).get("href")
+    response = urllib.request.urlopen(url)
+    contentString = response.read().decode()
+    content = json.loads(contentString)
+    content2 = content["ingredients"]
+    for i in content2:
+        for key in i:
+            ingredientsList.append(key["name"])
+    return ingredientsList
+
+
+print(getIngredients(dict))
